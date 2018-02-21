@@ -1,0 +1,26 @@
+{
+  "name": "google-hash-code-2018-test",
+  "version": "1.0.0",
+  "description": "https://hashcode.withgoogle.com/",
+  "main": "index.js",
+  "scripts": {
+    "small": "node index.js small",
+    "medium": "node index.js medium",
+    "example": "node index.js example",
+    "big": "node index.js big",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandrChernyavenko/google-hash-code-2018-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksandrChernyavenko/google-hash-code-2018-test/issues"
+  },
+  "homepage": "https://github.com/AleksandrChernyavenko/google-hash-code-2018-test#readme",
+  "dependencies": {
+    "js-combinatorics": "0.5.3"
+  }
+}
