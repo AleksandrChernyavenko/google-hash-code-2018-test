@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { generatePatterns } = require('./patterns');
 const { findBestOption } = require('./worker');
 const startTime = Date.now();
 const fileType = process.argv[2] || 'small';
@@ -7,12 +6,7 @@ const fileType = process.argv[2] || 'small';
 console.log('START');
 
 const { R, C, L, H, pizza } = getInfoFromFile();
-
-const patterns = generatePatterns(R, C, L, H);
-
-console.log(`Patterns generated in ${getGoneTime()} (${patterns.length} count)`);
-
-const { cellUsed, slices } = findBestOption(R, C, L, H, pizza, patterns);
+const { cellUsed, slices } = findBestOption(R, C, L, H, pizza);
 
 console.log(`slices: ${slices}`);
 console.log(`Pizza was cut.  Total time: ${getGoneTime()}`);
